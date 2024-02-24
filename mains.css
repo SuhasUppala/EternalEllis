@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+body 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+}
+section 
+{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+section::before 
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#000,rgb(20, 146, 225),#000);
+  animation: animate 5s linear infinite;
+}
+@keyframes animate 
+{
+  0%
+  {
+    transform: translateY(-100%);
+  }
+  100%
+  {
+    transform: translateY(100%);
+  }
+}
+section span 
+{
+  position: relative;
+  display: block;
+  width: calc(10vw - 2px);
+  height: calc(10vw - 2px);
+  background: #181818;
+  z-index: 2;
+  transition: 1.5s;
+}
+section span:hover 
+{
+  background: rgb(20, 146, 225);
+  transition: 0s;
+}
+section .signin
+{
+  position: absolute;
+  width: 400px;
+  background: #222;  
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 10px; */
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,9);
+  height: 80%;
+  width: 90%;
+  /* margin: 10px; */
+}
+section .signin .content 
+{
+  position: relative;
+  margin: 5px 10px 5px 10px; 
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+h1{
+    color: white;
+    margin: 10%;
+}
+/* .card{
+    background-color:white;
+    margin: 10% ;
+    padding : 10px;
+    width : 80%; /* Adjust as needed */
+    /* height: 80%;
+    position:relative;
+    display: flex;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    justify-content: space-around;
+} */ 
+
+  .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+
+  
+  .left-part {
+    width: 30%;
+    border-right: 1px solid #ccc;
+    position:relative;
+    margin-right: 10%;
+    padding-right:0px;
+    width: 140px;
+    background-color: white;
+  }
+  
+  .profile-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .profile-button img {
+    max-width: 50px;
+    border-radius: 50%;
+  }
+  
+  .button-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .block-button,
+  .new-button {
+    margin-bottom: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .right-part {
+    width: 70%;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  .small-card {
+    background-color: #eee;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .small-card p {
+    margin: 0;
+  }
+  
+  .out{
+    height: 40px;
+    width: 80px;
+    background-color: rgb(210, 78, 78);
+  }
+  .hea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
